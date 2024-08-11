@@ -1,0 +1,56 @@
+{
+    "name": "rmed19/simple-behaviors-bundle",
+    "description": "A Symfony bundle providing simple behaviors such as sluggable and timestampable entities.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed RHAMNIA",
+            "email": "rmed19@gmail.com"
+        }
+    ],
+    "keywords": [
+        "symfony",
+        "bundle",
+        "sluggable",
+        "timestampable",
+        "doctrine",
+        "entity listener",
+        "behavior",
+        "php"
+    ],
+    "require": {
+        "php": ">=8.0",
+        "symfony/config": "^4.0",
+        "symfony/dependency-injection": "^4.0",
+        "symfony/http-kernel": "^4.0",
+        "doctrine/orm": "^2.19",
+        "symfony/string": "^5.0",
+        "symfony/serializer": "^4.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mr\\SimpleBehaviorsBundle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mr\\SimpleBehaviorsBundle\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        },
+        "symfony": {
+            "allow-contrib": true,
+            "require": "6.*"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
