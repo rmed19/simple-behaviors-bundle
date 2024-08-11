@@ -21,15 +21,15 @@
     ],
     "require": {
         "php": ">=8.0",
-        "symfony/config": "^4.0",
-        "symfony/dependency-injection": "^4.0",
-        "symfony/http-kernel": "^4.0",
-        "doctrine/orm": "^2.19",
-        "symfony/string": "^5.0",
-        "symfony/serializer": "^4.0"
+        "symfony/config": "^6.0 || ^7.0",
+        "symfony/dependency-injection": "^6.0 || ^7.0",
+        "symfony/http-kernel": "^6.0 || ^7.0",
+        "doctrine/orm": "^2.10 || ^3.0",
+        "symfony/string": "^6.0 || ^7.0",
+        "symfony/serializer": "^6.0 || ^7.0"
     },
     "require-dev": {
-        "symfony/phpunit-bridge": "^7.1"
+        "symfony/phpunit-bridge": "^6.0 || ^7.0"
     },
     "autoload": {
         "psr-4": {
@@ -47,10 +47,11 @@
         },
         "symfony": {
             "allow-contrib": true,
-            "require": "6.*"
+            "require": "6.4"
         }
     },
     "scripts": {
         "test": "phpunit"
     }
 }
+
